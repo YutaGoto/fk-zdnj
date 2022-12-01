@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "r-fxxk"
+
+class Zatsudan < Brainfuck
+  inc "ざ" # +
+  dec "つ" # -
+  opn "だ" # [
+  cls "ん" # ]
+  nxt "雑" # >
+  prv "談" # <
+  put "zdnj" # .
+  get "!" # ,
+end
+
+puts Zatsudan.new.fuck(ARGF.read)
